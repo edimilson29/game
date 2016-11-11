@@ -1,0 +1,230 @@
+Program Pzim ;
+Var
+a, c1, c2: string;
+r, cont1, cont2: integer;
+
+Begin
+  c1:='';
+  c2:='';
+  cont1:=1;
+  cont2:=1;
+  
+  writeln('********************************************');
+  writeln('*		 BEM VINDO	          *');
+  writeln('*	 JOGO: A CORRIDA	 	    *');
+  writeln('********************************************');
+  writeln('');
+  writeln('Aperte ENTER para começar!');
+  writeln('');
+  writeln('Aperte ESC para sair!');
+  readln(a);
+  
+  {primeira questao}
+  
+  writeln('');
+  writeln(' Primeira questão ');
+	writeln('Qual a Raiz quadrada de 144?');
+  writeln('1-40');
+  writeln('2-32');
+  writeln('3-12');
+  readln(r);
+  clrscr;
+  if (r=3) then begin
+    c1:= c1 + '  ';
+    writeln('Correto!, Porque 12*12= 144');
+    cont1:= cont1 + 1;
+  end else begin
+    c2:= c2 + '  ';
+    writeln('Resposta errada!, Porque 12*12= 144');
+    cont2:= cont2 + 1;
+  end;
+  writeln('');
+  writeln(c1, ' carro-1	 	');
+  writeln('');
+  writeln(c2, ' carro-2		');
+  writeln(''); 
+  {segunda questao}
+  writeln('Segunda questao');
+  writeln('');
+  writeln('Quanto é 2+2*2?');
+  writeln('1-3');
+  writeln('2-6');
+  writeln('3-8');
+  readln(r);
+  clrscr;
+  if (r=2) then begin
+    c1:= c1 + '  ';
+    writeln('Correto!, Porque primeiro multiplica(2*2=4) depois soma(4+2=6)');
+    cont1:= cont1 + 1;
+  end else begin
+    c2:= c2 + '  ';
+    writeln('Resposta errada!, Porque primeiro multiplica(2*2=4) depois soma(4+2=6)');
+    cont2:= cont2 + 1;
+  end;
+  writeln('');
+  writeln(c1, ' carro-1	 	');
+  writeln('');
+  writeln(c2, ' carro-2		');
+
+  writeln(''); 
+  {terceira questao}
+  writeln('');
+	writeln('Terceira questao  '); 
+  writeln('Um homem viu uma toupeira.A toupera, que tambem olhou para ele, viu o que?');
+  writeln('1-O homem que a viu');
+  writeln('2-O dedo do homem que apontou pra ela que a viu');
+  writeln('3-nenhuma das alternativas');
+  readln(r);
+  clrscr;
+    if (r=3) then begin
+    c1:= c1 +'  ';
+    writeln('Correto!, Porque a Toupera nâo Possui visão!');
+    cont1:= cont1 + 1;
+  end else begin
+    c2:= c2 + '  ';
+    writeln('Errado!, Porque a Toupera nâo Possui visão!');
+    cont2:= cont2 + 1;
+  end;
+  writeln('');
+  writeln(c1, ' carro-1	 	');
+  writeln('');
+  writeln(c2, ' carro-2		');
+  writeln('');
+  {quarta questao}
+  writeln('');
+  writeln('Quarta questao');
+  writeln('Numero de estados da região sudeste do Brasil');
+  writeln('1-6');
+  writeln('2-5');
+  writeln('3-4');
+  readln(r);
+  clrscr;
+  if (r=3) then begin
+    c1:= c1 + '  ';
+    writeln('Correto!, Porque são 4: Espirito Santo, Minas Gerais, Rio de janeiro e São Paulo');
+    cont1:= cont1 + 1;
+  end else begin
+    c2:= c2 + '  ';
+    writeln('Errado!, Porque são 4: Espirito Santo, Minas Gerais, Rio de janeiro e São Paulo');
+    cont2:= cont2 + 1;
+  end;
+  writeln('');
+  writeln(c1, ' carro-1	 	');
+  writeln('');
+  writeln(c2, ' carro-2		');
+  writeln(''); 
+   {quinta questao}
+  writeln('');
+  writeln('Quinta questao');
+  writeln('Se diz que D.João VI detestava fazer uma coisa enquanto esteve no brasil,');
+  writeln('qual era essa coisa?');
+  writeln('1-assinar documentos');
+  writeln('2-tomar banho');
+  writeln('3-comer com as mãos');
+  readln(r);
+  clrscr;
+  if (r=2) then begin
+    c1:= c1 + '  ';
+    writeln('Correto!, Porque muitos relatos dizem que ele não gostava');
+    cont1:= cont1 + 1;
+  end else begin
+    c2:= c2 + '  ';
+    writeln('Errado!, Porque muitos relatos dizem que ele não gostava');
+    cont2:= cont2 + 1;
+  end;
+  writeln('');
+  writeln(c1, ' carro-1	 	');
+  writeln('');
+  writeln(c2, ' carro-2		');
+  writeln(''); 
+ 
+   {Sexta questao}
+  writeln('');
+  writeln('Sexta questao');
+  writeln('Quem é pai do computador?');
+  writeln('1-Charles Babbage ');
+  writeln('2-Charles Babge');
+  writeln('3-Blaise Pascal ');
+  readln(r);
+  clrscr;
+  if (r=1) then begin
+    c1:= c1 + '  ';
+    writeln('Correto!,referenciado como o inventor que projetou o primeiro computador de uso geral,');
+		writeln ('utilizando apenas partes mecânicas, a máquina analítica');
+    cont1:= cont1 + 1;
+  end else begin
+    c2:= c2 + '  ';
+    writeln ('errado!,referenciado como o inventor que projetou o primeiro computador de uso geral,');
+		writeln ('utilizando apenas partes mecânicas, a máquina analítica');
+    cont2:= cont2 + 1;
+  end;
+  writeln('');
+  writeln(c1, ' carro-1	 	');
+  writeln('');
+  writeln(c2, ' carro-2		');
+  writeln('');  
+   {Setima questao}
+  writeln('');
+  writeln('Setima questao');
+  writeln('Qual foi primeiro computador da empresa Apple ?');
+  writeln('1-Macintosh ');
+  writeln('2-Apple l ');
+  writeln('3-iMac ');
+  readln(r);
+  clrscr;
+  if (r=2) then begin
+    c1:= c1 + '  ';
+    writeln('Correto!, O primeiro computador da empresa Apple1 em julho de 1976');
+    cont1:= cont1 + 1;
+  end else begin
+    c2:= c2 + '  ';
+    writeln ('errado!, O primeiro computador da empresa Apple em julho de 1976.');
+    cont2:= cont2 + 1;
+  end;
+  writeln('');
+  writeln(c1, ' carro-1	 	');
+  writeln('');
+  writeln(c2, ' carro-2		');
+  writeln('');  
+   {Oitava questao}
+  writeln('');
+  writeln('Oitava questao');
+  writeln('Dentre as alternativas a seguir, qual não faz parte de um item de hardware? ');
+  writeln('1-Mouse ');
+  writeln('2-Chipset ');
+  writeln('3-Debian ');
+  readln(r);
+  clrscr;
+  if (r=3) then begin
+    c1:= c1 + '  ';
+    writeln('Correto!, Debian é um software (sistema operacional) livre que utiliza como kernel o Linux.');
+    cont1:= cont1 + 1;
+  end else begin
+    c2:= c2 + '  ';
+    writeln ('errado!, Debian é um software (sistema operacional) livre que utiliza como kernel o Linux.');
+    cont2:= cont2 + 1;
+  end;
+  writeln('');
+  writeln(c1, ' carro-1	 	');
+  writeln('');
+  writeln(c2, ' carro-2		');
+  writeln('');
+	  
+    if (CONT1>CONT2) then begin
+      writeln ('Parabéns, você ganhou o jogo!!');
+   end else begin
+      writeln ('Infelizmente você perdeu o jogo!!');
+   end;
+   writeln (' ');
+   
+   {Retorna um inteiro contendo o comprimento (quantidade de caracteres) da expressão.}
+   writeln ('Seu carro andou ' , length( C1 ) , ' espaços, e seu oponente andou '  , length( C2 ), ' espaços.');
+   writeln (' ');
+   writeln (' Fim do jogo! ');
+   
+   
+   
+   
+  
+  
+End.
